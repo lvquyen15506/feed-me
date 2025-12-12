@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +46,11 @@
                 opacity: 0;
                 transform: translateY(100vh) rotate(0deg);
             }
+
             1% {
                 opacity: 0.6;
             }
+
             100% {
                 opacity: 0.6;
                 transform: translateY(-100vh) rotate(360deg);
@@ -69,21 +72,28 @@
         }
 
         @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .title {
             font-size: 3.5rem;
             font-weight: 700;
             color: white;
-            text-shadow: 3px 3px 0 var(--primary), 6px 6px 0 rgba(0,0,0,0.1);
+            text-shadow: 3px 3px 0 var(--primary), 6px 6px 0 rgba(0, 0, 0, 0.1);
             margin-bottom: 10px;
         }
 
         .subtitle {
             font-size: 1.3rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             font-weight: 500;
         }
 
@@ -106,7 +116,7 @@
             background: white;
             border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
             position: relative;
             overflow: hidden;
@@ -135,7 +145,7 @@
             height: 150px;
             border-radius: 50%;
             border: 5px solid white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             object-fit: cover;
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             display: flex;
@@ -242,7 +252,7 @@
             background: white;
             border-radius: 15px;
             margin-bottom: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
         }
 
@@ -273,7 +283,7 @@
             background: white;
             border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
         }
 
@@ -303,7 +313,7 @@
 
         .donation-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .donation-card.selected {
@@ -392,10 +402,12 @@
                 transform: scale(1);
                 box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
             }
+
             50% {
                 transform: scale(1.02);
                 box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6), 0 0 0 10px rgba(255, 107, 107, 0.1);
             }
+
             100% {
                 transform: scale(1);
                 box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
@@ -407,7 +419,7 @@
             background: white;
             border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             margin-bottom: 30px;
         }
 
@@ -430,6 +442,7 @@
                 opacity: 0;
                 transform: translateX(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -480,7 +493,7 @@
         .footer {
             text-align: center;
             padding: 40px 20px;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .footer a {
@@ -502,7 +515,7 @@
             background: white;
             padding: 20px 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             display: flex;
             align-items: center;
             gap: 15px;
@@ -567,13 +580,18 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             animation: shimmer 2s infinite;
         }
 
         @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         .check {
@@ -591,14 +609,16 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 3px solid rgba(255,255,255,0.3);
+            border: 3px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             border-top-color: white;
             animation: spin 1s ease-in-out infinite;
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Responsive */
@@ -654,7 +674,7 @@
         /* Marquee */
         .marquee-container {
             overflow: hidden;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 10px 0;
             margin-bottom: 20px;
         }
@@ -672,8 +692,13 @@
         }
 
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         /* Responsive */
@@ -681,9 +706,15 @@
             .marquee {
                 animation: marquee-mobile 40s linear infinite;
             }
+
             @keyframes marquee-mobile {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-1000%); }
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-1000%);
+                }
             }
         }
 
@@ -703,11 +734,19 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Floating emojis - Rendered by JS -->
     <div id="floatingEmojisContainer"></div>
@@ -764,21 +803,21 @@
         // ║                    🎨 CẤU HÌNH CÁ NHÂN HÓA - CHỈNH SỬA Ở ĐÂY!               ║
         // ║         Chỉ cần thay đổi nội dung trong biến CONFIG bên dưới               ║
         // ╚════════════════════════════════════════════════════════════════════════════╝
-        
+
         const CONFIG = {
             // ═══════════════════════════════════════════════════════════════════
             // 📌 THÔNG TIN CƠ BẢN
             // ═══════════════════════════════════════════════════════════════════
-            pageTitle: "Nuôi Tôi 🍜",              // Tiêu đề trang (hiển thị trên tab)
-            
+            pageTitle: "Nuôi Quyền nhó 🍜",              // Tiêu đề trang (hiển thị trên tab)
+
             // ═══════════════════════════════════════════════════════════════════
             // 👤 THÔNG TIN CÁ NHÂN
             // ═══════════════════════════════════════════════════════════════════
             avatar: "🧑‍💻",                         // Avatar (emoji hoặc link ảnh)
             statusBadge: "😢",                     // Badge trạng thái bên cạnh avatar
-            authorName: "Tôi",                    // Tên hiển thị ở footer
-            authorLink: "",                       // Link tới profile (để trống nếu không có)
-            
+            authorName: "QQIT",                    // Tên hiển thị ở footer
+            authorLink: "https://www.facebook.com/quynsad1",                       // Link tới profile (để trống nếu không có)
+
             // ═══════════════════════════════════════════════════════════════════
             // 📖 CÂU CHUYỆN CỦA BẠN
             // ═══════════════════════════════════════════════════════════════════
@@ -788,74 +827,74 @@
                 <p>Mỗi đồng bạn donate sẽ giúp tôi:</p>
                 <ul style="margin-top: 10px; margin-left: 20px;">
                     <li>🍜 Ăn phở thay vì mì gói</li>
-                    <li>☕ Mua cà phê để thức code</li>
+                    <li>🍽️ Ngày ăn 3 bữa nhưng đêm vẫn thiếu</li>
                     <li>💊 Mua thuốc nhỏ mắt (quan trọng!)</li>
                     <li>🎮 Thỉnh thoảng được chơi game</li>
                 </ul>
             `,
-            
+
             // ═══════════════════════════════════════════════════════════════════
             // 📢 MARQUEE - DÒNG CHỮ CHẠY
             // ═══════════════════════════════════════════════════════════════════
             marqueeItems: [
                 "🔥 BREAKING: Dev bỏ ăn trưa 7 ngày liên tục để code dự án này!",
                 "🎮 Fun fact: 99% donate sẽ đi vào game và phở (mostly phở)",
-                "📊 Thống kê: 420 người xem, 69 người cười, 0 người donate",
+                "📊 Thống kê: 420 người xem, 69 người cười, 36 người donate",
                 "☕ Đang cần gấp cà phê để fix bug nghiêm trọng (game lag)",
-                "🏆 TOP DONOR: Anonymous - 500k | Lời nhắn: \"Code đẹp đấy, ăn đi em\"",
+                "🏆 TOP DONOR: QQIT - 500k | Lời nhắn: \"Code đẹp đấy, ăn đi em\"",
             ],
-            
+
             // ═══════════════════════════════════════════════════════════════════
             // 🎈 EMOJI NỔI - Animation background
             // ═══════════════════════════════════════════════════════════════════
             floatingEmojis: ["🍜", "💰", "🎮", "☕", "🍕", "💻", "🎵", "🌙", "⭐"],
-            
+
             // ═══════════════════════════════════════════════════════════════════
             // 💰 CÁC MỨC DONATE
             // ═══════════════════════════════════════════════════════════════════
             donationOptions: [
                 {
-                    amount: 10000,
+                    amount: 20000,
                     emoji: "🥤",
-                    description: "1 ly trà đá",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/JxboZl79y61Bagw"
+                    description: "1 cốc chè thái",
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/LDdw0w2XOrrge1Y"
                 },
                 {
-                    amount: 29000,
+                    amount: 36000,
                     emoji: "🍜",
                     description: "1 tô phở",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/9wdLZznlYg0gajP"
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/M7e574Vmjkpvb2v"
                 },
                 {
                     amount: 50000,
                     emoji: "☕",
                     description: "Cà phê 1 tuần",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/8mepZm76XKppbMy",
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/Vyb83NWpwXj3avA",
                     isDefault: true  // Mức mặc định được chọn sẵn
                 },
                 {
-                    amount: 100000,
-                    emoji: "🍕",
-                    description: "Pizza party",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/4zbqQnDXM0P2bpr"
+                    amount: 45000,
+                    emoji: "🍜",
+                    description: "Mỳ cay",
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/MYer2oBPQ3wkeOB"
                 },
                 {
-                    amount: 200000,
+                    amount: 100000,
                     emoji: "🎮",
-                    description: "1 game mới",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/N1aMZAom5Y4BbWm"
+                    description: "1 ít nạp game",
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/GRb463VlE257eBL"
                 },
                 {
                     amount: 500000,
                     emoji: "💎",
                     description: "VIP Supporter",
-                    momoLink: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3/MvbmqjGVG2XrbYA"
+                    momoLink: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK/5xe790YoNZg8b7r"
                 }
             ],
-            
+
             // Link MoMo mặc định (khi không tìm thấy amount phù hợp)
-            momoFallback: "https://me.momo.vn/1MIKuAfAtmCpIJu8swt3",
-            
+            momoFallback: "https://me.momo.vn/9vIaT5sECVUGtJUWfxTnUK",
+
             // ═══════════════════════════════════════════════════════════════════
             // 🎉 DANH SÁCH NGƯỜI ĐÃ DONATE
             // ═══════════════════════════════════════════════════════════════════
@@ -871,26 +910,25 @@
                 //     time: "2025-12-10 08:30:00"            // Thời gian (YYYY-MM-DD HH:MM:SS)
                 // },
             ],
-            
+
             // ═══════════════════════════════════════════════════════════════════
             // 📝 FOOTER - PHẦN CUỐI TRANG
             // ═══════════════════════════════════════════════════════════════════
-            footerText: "Nếu bạn thấy vui, hãy share cho bạn bè cùng cười! 😂",
+            footerText: "Hãy cùng góp gạp nuii Quyền nhó  💖",
             disclaimer: `
-                ⚠️ Đây là trang web parody/troll.<br>
                 Mọi donate đều được sử dụng để mua phở và cà phê (thật sự) 🍜 ☕
             `,
-            
+
             // ═══════════════════════════════════════════════════════════════════
             // 🎨 TÙY CHỈNH GIAO DIỆN (Nâng cao - không bắt buộc)
             // ═══════════════════════════════════════════════════════════════════
             sectionTitleDonate: "💝 Nuôi Tôi Ngay!",
             sectionTitleDonors: "🎉 Những người tốt bụng",
-            donateButtonText: "Nuôi Tôi",           // Text nút donate (sẽ thêm số tiền tự động)
+            donateButtonText: "Nuôi Quyền hí hí",           // Text nút donate (sẽ thêm số tiền tự động)
             emptyDonationTitle: "Chưa có ai nuôi tôi...",
             emptyDonationQuote: '"Một đồng cũng là tình thương, hai đồng cũng là yêu mến" 💝',
         };
-        
+
         // ═══════════════════════════════════════════════════════════════════════════
         // ⚠️ KHÔNG CẦN SỬA CODE BÊN DƯỚI (trừ khi bạn biết mình đang làm gì)
         // ═══════════════════════════════════════════════════════════════════════════
@@ -931,7 +969,7 @@
 
         // Render profile
         function renderProfile() {
-            document.getElementById('avatarContent').innerHTML = CONFIG.avatar.startsWith('http') 
+            document.getElementById('avatarContent').innerHTML = CONFIG.avatar.startsWith('http')
                 ? `<img src="${CONFIG.avatar}" alt="Avatar" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">`
                 : CONFIG.avatar;
             document.getElementById('statusBadge').textContent = CONFIG.statusBadge;
@@ -949,7 +987,7 @@
                     <div class="donation-desc">${option.description}</div>
                 </div>
             `).join('');
-            
+
             // Re-attach event listeners
             document.querySelectorAll('.donation-card').forEach(card => {
                 card.addEventListener('click', () => {
@@ -963,7 +1001,7 @@
 
         // Render footer
         function renderFooter() {
-            const authorLink = CONFIG.authorLink 
+            const authorLink = CONFIG.authorLink
                 ? `<a href="${CONFIG.authorLink}" target="_blank">${CONFIG.authorName}</a>`
                 : `<a>${CONFIG.authorName}</a>`;
             document.getElementById('footerAuthor').innerHTML = `Made with 💔 by ${authorLink}`;
@@ -1082,15 +1120,15 @@
         // Easter egg: Konami code
         let konamiCode = [];
         const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-        
+
         document.addEventListener('keydown', (e) => {
             konamiCode.push(e.key);
             konamiCode = konamiCode.slice(-10);
-            
+
             if (konamiCode.join(',') === konamiSequence.join(',')) {
                 document.body.style.animation = 'rainbow 1s infinite';
                 showToast('🌈 RAINBOW MODE ACTIVATED! 🌈', '🎮');
-                
+
                 // Add rainbow animation
                 const style = document.createElement('style');
                 style.textContent = `
@@ -1104,4 +1142,5 @@
         });
     </script>
 </body>
+
 </html>
